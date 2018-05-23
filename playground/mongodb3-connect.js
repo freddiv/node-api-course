@@ -5,7 +5,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, client) => {
      return  console.log('unable to connect to mongodb server');
    } 
   console.log('connected to mongodb server');  
-  const db = client.db('ToDoApp');
+  const db = client.db('TodoApp');
   
   db.collection('ToDos').insertOne({
    text: 'something ELSE to do',
